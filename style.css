@@ -60,7 +60,7 @@ body{
 }
 
 .container .circle::after{
-    content: "Merry Chrismas!\A Chúc anh em Giáng Sinh vui vẻ.";
+    content: "Merry Chrismas!\A Chúc Linh Giáng Sinh vui vẻ và ấm áp.";
     position: absolute;
     inset: -140px -200px;
     font-size: 4em;
