@@ -128,10 +128,5 @@ body{
         word-wrap: break-word; /* Chia dòng nếu quá dài */
     }
     
-
-    .container::before {
-        height: 120px; /* Giảm chiều cao cây */
-        background-size: contain; /* Điều chỉnh kích thước hình ảnh cây */
-    }
 }
 
