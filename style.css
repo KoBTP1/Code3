@@ -102,7 +102,6 @@ body{
     }
 }
 
-/* Thêm media query cho thiết bị di động */
 @media (max-width: 768px) {
     .container .circle {
         width: 250px; /* Giảm kích thước vòng tròn */
