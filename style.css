@@ -101,3 +101,26 @@ body{
         transform: translateY(100vh);
     }
 }
+
+/* Thêm media query cho thiết bị di động */
+@media (max-width: 768px) {
+    .container .circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .container .circle::before {
+        inset: -100px -150px;
+        background-size: 300px;
+    }
+
+    .container .circle::after {
+        inset: -100px -80px;
+        font-size: 1.2em;
+    }
+
+    .container::before {
+        height: 150px;
+        background-size: contain;
+    }
+}
