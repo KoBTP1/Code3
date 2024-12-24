@@ -115,8 +115,10 @@ body{
     }
 
     .container .circle::after {
-        inset: -100px -80px;
-        font-size: 1.2em;
+        inset: -90px -50px; /* Giảm khoảng cách so với khung tròn */
+        font-size: 1em; /* Giảm kích thước chữ */
+        line-height: 1.2; /* Điều chỉnh khoảng cách giữa các dòng */
+        padding: 0 10px; /* Thêm khoảng cách bên trong */
     }
 
     .container::before {
@@ -124,3 +126,4 @@ body{
         background-size: contain;
     }
 }
+
