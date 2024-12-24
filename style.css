@@ -105,25 +105,33 @@ body{
 /* Thêm media query cho thiết bị di động */
 @media (max-width: 768px) {
     .container .circle {
-        width: 200px;
-        height: 200px;
+        width: 250px; /* Giảm kích thước vòng tròn */
+        height: 250px;
+        top: 15%; /* Đưa vòng tròn lên trên */
     }
 
     .container .circle::before {
-        inset: -100px -150px;
-        background-size: 300px;
+        inset: -120px -150px; /* Điều chỉnh vị trí Santa */
+        background-size: 300px; /* Giảm kích thước Santa */
     }
 
     .container .circle::after {
-        inset: -90px -50px; /* Giảm khoảng cách so với khung tròn */
+        position: absolute;
+        top: 110%; /* Đặt văn bản bên dưới vòng tròn */
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 1em; /* Giảm kích thước chữ */
-        line-height: 1.2; /* Điều chỉnh khoảng cách giữa các dòng */
-        padding: 0 10px; /* Thêm khoảng cách bên trong */
+        line-height: 1.5; /* Tăng khoảng cách giữa các dòng */
+        text-align: center;
+        color: #fff;
+        white-space: pre-wrap; /* Đảm bảo xuống dòng khi cần */
+        word-wrap: break-word; /* Chia dòng nếu quá dài */
     }
+    
 
     .container::before {
-        height: 150px;
-        background-size: contain;
+        height: 120px; /* Giảm chiều cao cây */
+        background-size: contain; /* Điều chỉnh kích thước hình ảnh cây */
     }
 }
 
